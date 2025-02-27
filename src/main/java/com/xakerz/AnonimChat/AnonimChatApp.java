@@ -58,7 +58,7 @@ public class AnonimChatApp extends TelegramLongPollingBot {
                 }
             }
             inPut = message.getText();
-            outPut =": " + inPut;
+            outPut ="ID " + client.getId() + ": " + inPut;
             if (message.getText().equals("/start")) {
 
                     outPut = outPut.replace("/start", "Всем привет\uD83D\uDC4B");
